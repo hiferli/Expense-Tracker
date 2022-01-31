@@ -20,7 +20,7 @@
 .input {
     height: 25px;
     background-color: rgb(88, 83, 83);
-    width: auto;
+    width: fit-content;
 }
 
 ::placeholder {

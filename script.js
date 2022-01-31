@@ -17,25 +17,29 @@ function transaction(debitAmount , creditAmount , totalMoney) {
 
 function addValue() {
     moneyIn = parseInt(document.getElementById("amount").value);
-
-    totalMoney = totalMoney + moneyIn;
-    console.log(totalMoney);
-    document.getElementById("money").innerText = totalMoney;
     
-    transaction(moneyIn , 0 , totalMoney);
+    if (moneyIn) {
+      totalMoney = totalMoney + moneyIn;
+      console.log(totalMoney);
+      document.getElementById("money").innerText = totalMoney;
+
+      transaction(moneyIn, 0, totalMoney);
+    }
 }
 
 function subtractValue() {
     moneyOut = parseInt(document.getElementById("amount").value);
 
-    totalMoney = totalMoney - moneyOut;
+    if(moneyOut){
+        totalMoney = totalMoney - moneyOut;
     
-    if(totalMoney < 0){
-        alert("‼️You are out of money‼️");
+        if(totalMoney < 0){
+            alert("‼️You are out of money‼️");
+        }
+        
+        console.log(totalMoney);
+        document.getElementById("money").innerText = totalMoney;    
+    
+        transaction(0 , moneyOut , totalMoney);
     }
-    
-    console.log(totalMoney);
-    document.getElementById("money").innerText = totalMoney;    
-
-    transaction(0 , moneyOut , totalMoney);
 }
