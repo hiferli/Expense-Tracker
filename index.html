@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Expense Tracker</title>
+    <title>Expenses Tracker</title>
 </head>
 <body>
     <!-- JS File -->
@@ -17,13 +17,10 @@
         <h2 id = "money">0</h2>
     </div>
     
-    <input class = "input" id = "earn" onfocus="this.value = ''" placeholder="Add Amount">
+    <input class = "input" id = "amount" onfocus="this.value = ''" placeholder="Add Amount">
     <br>
-    <button class = "button" onclick = "addValue()">Add Credits</button>
-    <br> <br>
-    <input class = "input" id = "spent" onfocus="this.value = ''" placeholder="Deduct Amount">
-    <br>
-    <button class = "button" onclick = "subtractValue()">Add Transaction</button>
+    <button class = "button" onclick = "addValue()">Credit</button>
+    <button class = "button" onclick = "subtractValue()">Debit</button>
 
     <h1>Transaction Log</h1>
 

@@ -11,21 +11,23 @@ function transaction(debitAmount , creditAmount , totalMoney) {
     }
     
     transactionList.appendChild(transactionDetails);
-    document.getElementById("transaction").appendChild(transactionList);
+    document.getElementById("transaction").prepend(transactionList);
 }
 
 
 function addValue() {
-    moneyIn = parseInt(document.getElementById("earn").value);
+    moneyIn = parseInt(document.getElementById("amount").value);
+
     totalMoney = totalMoney + moneyIn;
     console.log(totalMoney);
     document.getElementById("money").innerText = totalMoney;
-
+    
     transaction(moneyIn , 0 , totalMoney);
 }
 
 function subtractValue() {
-    moneyOut = parseInt(document.getElementById("spent").value);
+    moneyOut = parseInt(document.getElementById("amount").value);
+
     totalMoney = totalMoney - moneyOut;
     
     if(totalMoney < 0){
