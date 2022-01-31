@@ -1,0 +1,26 @@
+* {
+    background-color: #333;
+    color: beige;
+}
+
+#money {
+    font-size: 70px;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.button {
+    color: rgb(138, 222, 224);
+    background-color: rgb(126, 10, 10);
+    padding: 5px;
+}
+
+.input {
+    height: 25px;
+    background-color: rgb(88, 83, 83);
+    width: auto;
+}
+
+::placeholder {
+    color: rgb(199, 172, 139);
+}

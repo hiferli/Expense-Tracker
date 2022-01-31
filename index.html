@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <!-- JS File -->
+    
+    <h1>Expense Tracker</h1>
+    
+    <div class = "amount">
+        <h2>Amount: </h2>
+        <h2 id = "money">0</h2>
+    </div>
+    
+    <input class = "input" id = "earn" onfocus="this.value = ''" placeholder="Add Amount">
+    <br>
+    <button class = "button" onclick = "addValue()">Add Credits</button>
+    <br> <br>
+    <input class = "input" id = "spent" onfocus="this.value = ''" placeholder="Deduct Amount">
+    <br>
+    <button class = "button" onclick = "subtractValue()">Add Transaction</button>
+
+    <h1>Transaction Log</h1>
+
+    <ul id = "transaction">
+        
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
