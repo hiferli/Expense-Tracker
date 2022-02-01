@@ -1,28 +1,35 @@
 * {
-    background-color: #333;
-    color: beige;
+    background-color: #E7F4E5;
+    color: #2F4858;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
 }
+
+#tracker_heading {
+    font-size: 50px;
+}
+
 
 #money {
-    font-size: 70px;
-    font-weight: lighter;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.button {
-    color: rgb(138, 222, 224);
-    background-color: rgb(126, 10, 10);
-    padding: 5px;
-    width: 80px;
-
+    font-size: 100px;
+    margin: 0px;
+    width: auto;
 }
 
 .input {
+    width: 300px;
     height: 25px;
-    background-color: rgb(88, 83, 83);
-    width: fit-content;
 }
 
-::placeholder {
-    color: rgb(199, 172, 139);
+.button {
+    background-color: rgb(81, 175, 81);
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    color: antiquewhite;
+}
+
+#debit {
+    background-color: rgb(230, 62, 62);
 }

@@ -25,21 +25,25 @@ function addValue() {
 
       transaction(moneyIn, 0, totalMoney);
     }
+
+    document.getElementById("amount").value = "";
 }
 
 function subtractValue() {
     moneyOut = parseInt(document.getElementById("amount").value);
-
+    
     if(moneyOut){
         totalMoney = totalMoney - moneyOut;
-    
+        
         if(totalMoney < 0){
             alert("‼️You are out of money‼️");
         }
         
         console.log(totalMoney);
         document.getElementById("money").innerText = totalMoney;    
-    
+        
         transaction(0 , moneyOut , totalMoney);
     }
+    
+    document.getElementById("amount").value = "";
 }

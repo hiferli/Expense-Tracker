@@ -8,26 +8,27 @@
     <title>Expenses Tracker</title>
 </head>
 <body>
-    <!-- JS File -->
     
-    <h1>Expense Tracker</h1>
-    
+    <h1 id = "tracker_heading">Expense Tracker</h1>
+    <br>
     <div class = "amount">
         <h2>Amount: </h2>
         <h2 id = "money">0</h2>
     </div>
     
-    <input class = "input" id = "amount" onfocus="this.value = ''" placeholder="Enter the Amount">
+    <br><br><br>
+    <input type = "number" class = "input" id = "amount" onfocus="this.value = ''" placeholder="Enter the Amount">
     <br>
-    <button class = "button" onclick = "addValue()">Credit</button>
-    <button class = "button" onclick = "subtractValue()">Debit</button>
-
+    <button class = "button" id = "credit" onclick = "addValue()">Credit</button>
+    <button class = "button" id = "debit" onclick = "subtractValue()">Debit</button>
+    
     <h1>Transaction Log</h1>
-
+    
     <ul id = "transaction">
         
     </ul>
-
+    
+    <!-- JS File -->
     <script src="script.js"></script>
 </body>
 </html>
